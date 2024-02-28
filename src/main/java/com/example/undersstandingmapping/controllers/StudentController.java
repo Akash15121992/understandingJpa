@@ -44,7 +44,7 @@ public class StudentController {
     }
 
     //create another api using which we can search a student by name
-    @RequestMapping(method = RequestMethod.GET,value = "/getStudent")
+    @RequestMapping(method = RequestMethod.GET,value = "/getStudents")
     public Student getStudent(@RequestParam String name){
         return  studentRepository.findByName(name);
     }
